@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/b"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color5"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="@color/color5"
+            android:fontFamily="monospace"
+            android:paddingTop="8dp"
+            android:text="NextCloud Files"
+            android:textAlignment="center"
+            android:textColor="@color/color6"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/uploadfile5"
+            android:layout_width="56dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="1dp"
+            android:background="@color/color5"
+            android:onClick="backfolder"
+            android:paddingLeft="10dp"
+            android:text="Back "
+            android:textAlignment="textStart"
+            android:textColor="@color/color6"
+            android:textStyle="bold" />
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="288dp"
+            android:fadingEdge="horizontal|vertical">
+
+
+        </ListView>
+
+        <Button
+            android:id="@+id/remotefilebutton"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/color1"
+            android:drawableLeft="@drawable/cloud"
+            android:onClick="onClickHandler"
+            android:paddingLeft="100dp"
+            android:text="   Show Remote Files"
+            android:textAlignment="textStart"
+            android:textColor="@color/color6"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/logout2"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_alignStart="@+id/b"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="3dp"
+            android:background="@color/color4"
+            android:drawableLeft="@drawable/delete"
+            android:onClick="deletefile"
+            android:paddingLeft="100dp"
+            android:text="   Delete Remote File"
+            android:textAlignment="textStart"
+            android:textColor="@color/color6"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/selectfolder"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="3dp"
+            android:background="@color/colorPrimary"
+            android:drawableLeft="@drawable/folderic"
+            android:onClick="onClickHandler"
+            android:paddingLeft="100dp"
+            android:text="   Select Folder"
+            android:textAlignment="textStart"
+            android:textColor="@color/color6"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/uploadfile"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="1dp"
+            android:background="@color/color3"
+            android:drawableLeft="@drawable/up"
+            android:onClick="onClickHandler"
+            android:paddingLeft="100dp"
+            android:text="   Upload Files"
+            android:textAlignment="textStart"
+            android:textColor="@color/color6"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_alignStart="@+id/b"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="3dp"
+            android:background="@color/color2"
+            android:drawableLeft="@drawable/logout"
+            android:onClick="onClickHandler"
+            android:paddingLeft="100dp"
+            android:text="   Log Out"
+            android:textAlignment="textStart"
+            android:textColor="@color/color6"
+            android:textStyle="bold" />
+
+        <FrameLayout
+            android:id="@+id/frame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/proses"
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
+                android:textAlignment="center"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+    </LinearLayout>
+</RelativeLayout>
